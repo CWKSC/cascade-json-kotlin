@@ -4,6 +4,24 @@ A specific format represent file directory in Json
 
 Provide a function for convert to map or json string in Kotlin
 
+### Usage
+
+Download zip file in [Release](https://github.com/CWKSC/CascadeJson.kt/releases), unzip it, put into `~/.m2/repository/`
+
+In your `build.gradle.kts`
+
+```kotlin
+repositories {
+    ...
+    mavenLocal()
+}
+
+dependencies {
+    ...
+    implementation("cwksc:CascadeJsonKt-jvm:0.0.0")
+}
+```
+
 ### Interface
 
 ```kotlin
@@ -63,7 +81,7 @@ fun fromStringToMap(jsonString: String): MutableMap<String, String> {
     if (jsonString == "{}") return mutableMapOf()
 
     val json = Json.parseToJsonElement(jsonString)
-    if(json !is JsonObject) throw IllegalArgumentException("jsonString is not a JsonObject")
+    if (json !is JsonObject) throw IllegalArgumentException("jsonString is not a JsonObject")
 
     val result = mutableMapOf<String, String>()
     val layers = mutableListOf<String>()
