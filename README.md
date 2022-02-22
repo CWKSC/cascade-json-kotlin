@@ -59,9 +59,11 @@ Convert by `fromStringToJsonString`:
 
 ```kotlin
 fun fromStringToMap(jsonString: String): MutableMap<String, String> {
-    if (jsonString == "{}" || jsonString.isEmpty()) return mutableMapOf()
+    if (jsonString.isEmpty()) throw IllegalArgumentException("jsonString is empty")
+    if (jsonString == "{}") return mutableMapOf()
 
     val json = Json.parseToJsonElement(jsonString)
+    if(json !is JsonObject) throw IllegalArgumentException("jsonString is not a JsonObject")
 
     val result = mutableMapOf<String, String>()
     val layers = mutableListOf<String>()
