@@ -8,7 +8,7 @@ object CascadeJsonUtil {
         if (jsonString == "{}") return mutableMapOf()
 
         val json = Json.parseToJsonElement(jsonString)
-        if(json !is JsonObject) throw IllegalArgumentException("jsonString is not a JsonObject")
+        if (json !is JsonObject) throw IllegalArgumentException("jsonString is not a JsonObject")
 
         val result = mutableMapOf<String, String>()
         val layers = mutableListOf<String>()
