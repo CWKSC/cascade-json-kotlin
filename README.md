@@ -113,7 +113,7 @@ fun fromStringToJsonString(jsonString: String): String {
 
 ### Project environment
 
-open folder `CascadeJsonKt/` by IntelliJ IDEA
+Open folder `CascadeJsonKt/` by IntelliJ IDEA
 
 ### License
 
