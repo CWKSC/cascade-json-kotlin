@@ -6,4 +6,4 @@ build/
 .gradle/buildOutputCleanup/buildOutputCleanup.lock
 .gradle/buildOutputCleanup/outputFiles.bin
 .gradle/kotlin/sourceSetMetadata/
-.gradle/checksums/checksums.lock
+.gradle/checksums/
