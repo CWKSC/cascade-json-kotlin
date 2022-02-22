@@ -5,3 +5,5 @@ build/
 .gradle/7.1/fileHashes/fileHashes.lock
 .gradle/buildOutputCleanup/buildOutputCleanup.lock
 .gradle/buildOutputCleanup/outputFiles.bin
+.gradle/kotlin/sourceSetMetadata/
+.gradle/checksums/checksums.lock
