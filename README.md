@@ -55,7 +55,7 @@ Convert by `fromStringToJsonString`:
 {"file1":"value1","file2":"value2","dir1/file3":"value3","dir1/file4":"value4","dir2/file5":"value5","dir2/file6":"value6","dir2/dir3/file7":"value7","dir2/dir3/file8":"value8"}
 ```
 
-### implementation
+### Implementation
 
 ```kotlin
 fun fromStringToMap(jsonString: String): MutableMap<String, String> {
