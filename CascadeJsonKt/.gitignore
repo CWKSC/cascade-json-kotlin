@@ -1,8 +1,11 @@
+.DS_Store
 build/
+out/
 .gradle/7.1/executionHistory/executionHistory.bin
 .gradle/7.1/executionHistory/executionHistory.lock
 .gradle/7.1/fileHashes/fileHashes.bin
 .gradle/7.1/fileHashes/fileHashes.lock
+.gradle/7.1/fileHashes/resourceHashesCache.bin
 .gradle/buildOutputCleanup/buildOutputCleanup.lock
 .gradle/buildOutputCleanup/outputFiles.bin
 .gradle/kotlin/sourceSetMetadata/
