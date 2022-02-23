@@ -8,5 +8,6 @@ out/
 .gradle/7.1/fileHashes/resourceHashesCache.bin
 .gradle/buildOutputCleanup/buildOutputCleanup.lock
 .gradle/buildOutputCleanup/outputFiles.bin
+.gradle/buildOutputCleanup/cache.properties
 .gradle/kotlin/sourceSetMetadata/
 .gradle/checksums/
