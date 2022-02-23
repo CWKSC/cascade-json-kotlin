@@ -101,12 +101,11 @@ fun fromStringToMap(jsonString: String): MutableMap<String, String> {
             }
             is JsonArray -> {
                 if (jsonElement.size != 2) {
-                    throw IllegalArgumentException("jsonString is not a JsonObject")
-                } else {
-                    val key = jsonElement[0]
-                    result[layers.joinToString("/") + "/"] = key.jsonPrimitive.content
-                    dfs(jsonElement[1])
+                    throw IllegalArgumentException("Unexpected JsonArray format")
                 }
+                val (directoryKey, jsonObject) = jsonElement
+                result[layers.joinToString("/") + "/"] = directoryKey.jsonPrimitive.content
+                dfs(jsonObject)
             }
         }
     }
