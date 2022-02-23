@@ -30,7 +30,7 @@ internal class CascadeJsonUtilTest {
 }
 """
 
-    private val testcase1_result = mapOf(
+    private val testcase1Result = mapOf(
         "file1" to "value1",
         "file2" to "value2",
         "dir1/file3" to "value3",
@@ -45,14 +45,14 @@ internal class CascadeJsonUtilTest {
     @Test
     fun fromStringToMap_testcase1() {
         val map = CascadeJsonUtil.fromStringToMap(testcase1)
-        assertEquals(testcase1_result, map)
+        assertEquals(testcase1Result, map)
     }
 
     @Test
     fun fromStringToJsonString_testcase1() {
         val jsonString = CascadeJsonUtil.fromStringToJsonString(testcase1)
         assertEquals(
-            Json.encodeToJsonElement(testcase1_result),
+            Json.encodeToJsonElement(testcase1Result),
             Json.parseToJsonElement(jsonString)
         )
     }
