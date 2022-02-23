@@ -5,7 +5,7 @@ plugins {
 }
 
 group = "cwksc"
-version = "0.0.0"
+version = "0.0.1"
 
 repositories {
     mavenCentral()
@@ -41,7 +41,7 @@ kotlin {
     sourceSets {
         val commonMain by getting {
             dependencies {
-                implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.3.2")
+                api("org.jetbrains.kotlinx:kotlinx-serialization-json:1.3.2")
             }
         }
         val commonTest by getting {
