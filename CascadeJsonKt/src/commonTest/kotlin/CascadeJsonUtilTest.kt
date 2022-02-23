@@ -35,7 +35,7 @@ internal class CascadeJsonUtilTest {
         "file2" to "value2",
         "dir1/file3" to "value3",
         "dir1/file4" to "value4",
-        "dir2" to "dir2-key",
+        "dir2/" to "dir2-key",
         "dir2/file5" to "value5",
         "dir2/file6" to "value6",
         "dir2/dir3/file7" to "value7",

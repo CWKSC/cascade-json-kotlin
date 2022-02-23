@@ -26,11 +26,11 @@ object CascadeJsonUtil {
                     result[layers.joinToString("/")] = jsonElement.content
                 }
                 is JsonArray -> {
-                    if(jsonElement.size != 2) {
+                    if (jsonElement.size != 2) {
                         throw IllegalArgumentException("jsonString is not a JsonObject")
                     } else {
                         val key = jsonElement[0]
-                        result[layers.joinToString("/")] = key.jsonPrimitive.content
+                        result[layers.joinToString("/") + "/"] = key.jsonPrimitive.content
                         dfs(jsonElement[1])
                     }
                 }
